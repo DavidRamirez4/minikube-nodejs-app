@@ -26,8 +26,8 @@ jobs:
         echo -n "verifying images:"
         docker images
 
-    - name: Check if image exists in Minikube
-      run: docker images | grep devopshint/node-app
+    - name: List Docker images
+      run: docker images
 
     - name: Deploy to minikube
       run: |
